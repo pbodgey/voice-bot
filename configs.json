@@ -1,0 +1,8 @@
+{
+    "command_prefix": "?",
+    "case_insensitive": true,
+    "soundfx_directory": "soundfx",
+    "soundfx": {
+        "lazer": "LaserBlastQuick PE1095107.mp3"
+    }
+}

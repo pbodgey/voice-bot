@@ -20,7 +20,7 @@ class SoundFXSource(discord.PCMVolumeTransformer):
         file_location = CONFIGS.soundfx[effect_id]
         abs_path = os.path.abspath(os.path.dirname(__file__))
         return discord.FFmpegPCMAudio(
-            source=f"{abs_path}/../../{CONFIGS.soundfx_directory}/{file_location}"
+            source=f"{abs_path}/{CONFIGS.soundfx_directory}/{file_location}"
         )
 
 

@@ -1,3 +1,4 @@
 .env
 soundfx/
 .vscode/
+Pipfile.lock

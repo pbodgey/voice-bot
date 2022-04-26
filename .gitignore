@@ -2,3 +2,5 @@
 soundfx/
 .vscode/
 Pipfile.lock
+node_modules/
+package-lock.json

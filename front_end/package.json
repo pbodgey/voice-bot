@@ -1,0 +1,16 @@
+{
+  "name": "voice_bot_frontend",
+  "version": "0.0.1",
+  "description": "The front-end of the voice_bot project",
+  "main": "index.html",
+  "scripts": {
+    "run": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.18.0"
+  }
+}

@@ -1,9 +1,9 @@
-require('dotenv').config();
-const configs = require("./../../configs.json");
+import * as configs from './../configs.json' assert { type: 'json' };
+import * as ENV from './env.js';
 
-webhook_send = function(msg) {
+function webhook_send(msg) {
     var request = new XMLHttpRequest();
-    request.open("POST", process.env.WEBHOOK_URL);
+    request.open("POST", ENV.ENV.WEBHOOK_URL);
     request.setRequestHeader('Content-type', 'application/json');
     const parms = {
         username: "SoundFX Bot",
@@ -13,16 +13,15 @@ webhook_send = function(msg) {
     request.send(JSON.stringify(parms));
 };
 
-module.exports = {
-    join: function() {
-        webhook_send(configs.command_prefix + "join");
-    },
+export function join() {
+    console.log(configs);
+    webhook_send(configs.default.command_prefix + "join");
+};
 
-    leave: function() {
-        webhook_send(configs.command_prefix + "leave");
-    },
+export function leave() {
+    webhook_send(configs.default.command_prefix + "leave");
+};
 
-    play: function(effect) {
-        webhook_send(configs.command_prefix + "play " + effect);
-    }
+export function play(effect) {
+    webhook_send(configs.default.command_prefix + "play " + effect);
 };

@@ -4,4 +4,4 @@ soundfx/
 Pipfile.lock
 node_modules/
 package-lock.json
-*/env.js
+env.js

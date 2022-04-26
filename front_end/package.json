@@ -4,10 +4,10 @@
   "description": "The front-end of the voice_bot project",
   "main": "index.html",
   "scripts": {
-    "run": "node index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Aaron Barge & Perry McCarthy",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.0",
